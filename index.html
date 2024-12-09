@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ray Tracer</title>
+<style>
+  body {
+    background: #333;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  canvas {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    image-rendering: pixelated;
+  }
+  label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .controls {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Ray Tracing in One Weekend (JavaScript)</h1>
+<canvas id="canvas" width="400" height="200"></canvas>
+<div class="controls">
+  <label>Samples per Pixel: <input type="number" id="samples" value="1" min="1" max="500"/></label>
+  <label>Max Depth: <input type="number" id="depth" value="3" min="1" max="50"/></label>
+  <label>Field of View: <input type="number" id="fov" value="90" min="10" max="120"/></label>
+  <button id="renderBtn">Render</button>
+</div>
+<script src="raytracer.js"></script>
+
+</body>
+</html>
